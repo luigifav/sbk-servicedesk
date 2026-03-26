@@ -613,8 +613,10 @@
       <span>Carregando formulário…</span>
     </div>
     <iframe id="iframe-failure"
+            class="clickup-embed clickup-dynamic-height"
             title="Formulário de Reportar Falha"
             sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+            onwheel=""
             onload="onIframeLoad('failure')"
             tabindex="0">
     </iframe>
@@ -659,8 +661,10 @@
       <span>Carregando formulário…</span>
     </div>
     <iframe id="iframe-request"
+            class="clickup-embed clickup-dynamic-height"
             title="Formulário de Abrir Solicitação"
             sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+            onwheel=""
             onload="onIframeLoad('request')"
             tabindex="0">
     </iframe>
@@ -672,8 +676,8 @@
 
 <script>
   /* ── URL Constants — replace these two values to go live ── */
-  const FAILURE_FORM_URL = "YOUR_SERVICENOW_URL_HERE";
-  const REQUEST_FORM_URL = "YOUR_SERVICENOW_URL_HERE";
+  const FAILURE_FORM_URL = "https://forms.clickup.com/90132985812/f/2ky5gdym-3353/P0WU25TF3KFNZXEVXT";
+  const REQUEST_FORM_URL = "https://forms.clickup.com/90132985812/f/2ky5gdym-3333/NIRV7VPPJXPTL0RS1I";
 
   /* ── Internal state ── */
   let current = 'select';
@@ -732,5 +736,7 @@
   });
 </script>
 
+
+<script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
 </body>
 </html>
